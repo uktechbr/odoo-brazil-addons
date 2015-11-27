@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Address from Brazilian Localization ZIP by Correios to Odoo
@@ -23,15 +23,18 @@
 {
     'name': 'Address from Brazilian Localization ZIP by Correios',
     'license': 'AGPL-3',
-    'author': 'Michell Stuttgart',
+    'author': 'KMEE',
     'maintainer': 'KMEE',
     'version': '8.1',
     'website': 'www.kmee.com.br',
     'depends': [
         'l10n_br_zip',
     ],
+    'test': [
+        'test/company_zip.yml',
+        'test/partner_zip.yml',
+    ],
     'category': 'Localization',
-    'active': False,
     'installable': True,
     'external_dependencies': {
         'python': ['suds'],
